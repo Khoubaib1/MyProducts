@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="MyProducts.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyProducts"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="#FF180083">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="97*"/>
+            <ColumnDefinition Width="28*"/>
+            <ColumnDefinition Width="275*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="98*"/>
+            <RowDefinition Height="44*"/>
+            <RowDefinition Height="63*"/>
+            <RowDefinition Height="115*"/>
+        </Grid.RowDefinitions>
+        <Border BorderBrush="White" BorderThickness="2" Grid.Row="1" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.Column="1" CornerRadius="15" Background="White" Height="44" Margin="0.333,0.167,77,0">
+            <TextBox x:Name="Login" TextWrapping="Wrap" Text="" Background="{x:Null}" AcceptsReturn="True" PlaceholderText="Login" ToolTipService.ToolTip="Entrer votre login" Margin="-0.667,0.333,76.833,0" Grid.Row="1" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.Column="1" Height="30" SelectionHighlightColor="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" BorderThickness="0" RenderTransformOrigin="0.5,0.5">
+                <TextBox.RenderTransform>
+                    <CompositeTransform TranslateX="20" TranslateY="2"/>
+                </TextBox.RenderTransform>
+            </TextBox>
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1"  VerticalAlignment="Top" Grid.Row="2" Grid.ColumnSpan="2" Grid.Column="1" Height="39" Margin="0.333,18.833,77,0" CornerRadius="15" Background="White">
+            <PasswordBox x:Name="Passeword" Background="{x:Null}" Margin="5,1,8,0" VerticalAlignment="Top" Grid.Row="2" Grid.ColumnSpan="2" Grid.Column="1" Height="39" BorderBrush="{x:Null}" Foreground="{x:Null}" SelectionHighlightColor="{x:Null}" PlaceholderText="Mot de passe" BorderThickness="0"/>
+        </Border>
+        <Button x:Name="Connection"  Content="Connection" Click="Connection_Click" Grid.Row="3" Margin="9,2,120,0" HorizontalAlignment="Stretch" Grid.Column="2" VerticalAlignment="Top" Height="58"/>
+
+
+
+    </Grid>
+</Page>
